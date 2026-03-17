@@ -208,6 +208,7 @@ __marimo__/
 
 # OS
 .DS_Store
+*/.DS_Store
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
@@ -222,3 +223,4 @@ infra/terraform/*.tfvars
 !infra/terraform/terraform.tfvars.example
 *.tfvars.json
 crash.log
+.terraform.lock.hcl
