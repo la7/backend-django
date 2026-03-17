@@ -1,0 +1,18 @@
+# -----------------------------------------------------------------------------
+# Ejemplo de variables para Terraform
+# Copiar a terraform.tfvars y rellenar con tus valores
+# -----------------------------------------------------------------------------
+
+aws_region   = "us-east-1"
+instance_type = "t2.micro"
+key_name     = "mi-clave-aws"
+
+# URL del repositorio Git (público)
+repo_url     = "https://github.com/tu-usuario/backend-django.git"
+
+# MongoDB Atlas free tier: crear cluster en atlas.mongodb.com
+# Formato: mongodb+srv://usuario:password@cluster.xxxxx.mongodb.net/
+mongo_uri    = "mongodb+srv://usuario:password@cluster.xxxxx.mongodb.net/"
+mongo_db     = "local"
+
+project_name = "backend-django"

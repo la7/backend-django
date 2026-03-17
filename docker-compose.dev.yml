@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  localstack:
+    image: localstack/localstack:3.0
+    container_name: backend-django-localstack
+    ports:
+      - "4566:4566" # main LocalStack endpoint
+      - "4571:4571" # optional legacy port
+    environment:
+      - SERVICES=s3,dynamodb
+      - DEBUG=1
+      - DEFAULT_REGION=us-east-1
+    # Nota: no montamos /tmp/localstack para que LocalStack pueda limpiar su tmp sin errores.
+    # Esto hace que los datos no persistan entre reinicios del contenedor.
+
+  mongodb:
+    image: mongo:6.0
+    container_name: backend-django-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  localstack_data:
+  mongo_data:

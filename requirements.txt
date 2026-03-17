@@ -1,0 +1,10 @@
+django
+djangorestframework
+drf-spectacular
+gunicorn
+djangorestframework-simplejwt
+pymongo
+passlib
+bcrypt
+django-cors-headers
+python-dotenv
