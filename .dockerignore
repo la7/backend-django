@@ -1,0 +1,42 @@
+# Git y control de versiones
+.git
+.gitignore
+
+# Entornos virtuales y Python
+.venv
+venv
+env
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.coverage
+htmlcov
+
+# IDE y configuración local
+.idea
+.vscode
+*.swp
+*.swo
+
+# Archivos sensibles
+.env
+.env.*
+*.pem
+
+# Documentación y desarrollo
+*.md
+!README.md
+
+# Terraform (no necesario en la imagen)
+terraform/
+*.tf
+*.tfvars
+!terraform/.gitkeep
+
+# Vercel
+.vercel
+
+# Otros
+.DS_Store
+*.log
